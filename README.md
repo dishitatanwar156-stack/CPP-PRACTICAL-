@@ -172,7 +172,147 @@ int main() {
         cout << endl;
     }
 
-    return 0;
 }
 <img width="523" height="324" alt="image" src="https://github.com/user-attachments/assets/950def07-5735-4efc-8079-6b237b6dd530" />
+
+
+#7. create a structure student with : roll number , name  , marks  . input details by user of 5 students and display students who scored more than 75 marks . 
+    return 0;
+
+    #include <iostream>
+#include <string>
+using namespace std;
+
+struct Student {
+    int roll;
+    string name;
+    float marks;
+};
+
+int main() {
+    Student s[5];
+
+    // Input details
+    for (int i = 0; i < 5; i++) {
+        cout << "\nEnter details of student " << i + 1 << endl;
+
+        cout << "Roll number: ";
+        cin >> s[i].roll;
+
+        cin.ignore(); // clear buffer
+        cout << "Name: ";
+        getline(cin, s[i].name);
+
+        cout << "Marks: ";
+        cin >> s[i].marks;
+    }
+
+    // Display students with marks > 75
+    cout << "\nStudents who scored more than 75 marks:\n";
+
+    for (int i = 0; i < 5; i++) {
+        if (s[i].marks > 75) {
+            cout << "\nRoll Number: " << s[i].roll;
+            cout << "\nName: " << s[i].name;
+            cout << "\nMarks: " << s[i].marks << endl;
+        }
+    }
+
+    return 0;
+}
+
+<img width="573" height="555" alt="image" src="https://github.com/user-attachments/assets/b44d5172-1da8-4eaf-9fb5-a31d13b08ec3" />
+
+<img width="737" height="215" alt="image" src="https://github.com/user-attachments/assets/09677b88-7065-4eca-a08e-76e9746fcaa2" />
+
+
+#more simpler code using functions in C++
+#include <iostream>
+using namespace std;
+
+struct Student {
+    int roll;
+    char name[20];
+    int marks;
+};
+
+int main() {
+    Student s[5];
+
+    // Input
+    for (int i = 0; i < 5; i++) {
+        cout << "\nEnter details of student " << i + 1 << endl;
+        cout << "Roll number: ";
+        cin >> s[i].roll;
+        cout << "Name: ";
+        cin >> s[i].name;
+        cout << "Marks: ";
+        cin >> s[i].marks;
+    }
+
+    // Output
+    cout << "\nStudents who scored more than 75 marks:\n";
+
+    for (int i = 0; i < 5; i++) {
+        if (s[i].marks > 75) {
+            cout << "\nRoll number: " << s[i].roll;
+            cout << "\nName: " << s[i].name;
+            cout << "\nMarks: " << s[i].marks << endl;
+        }
+    }
+
+    return 0;
+}
+
+
+#8.Define a structure Employee containing: employee ID, name, basic salary .Calculate and display gross salary (basic + 20% HRA + 10% DA).
+
+#include <iostream>
+using namespace std;
+
+struct Employee {
+    int id;
+    char name[50];
+    float basic;
+};
+
+int main() {
+    int n;
+    Employee e[100];   // fixed size array
+
+    cout << "Enter number of employees: ";
+    cin >> n;
+
+    // Input loop
+    for (int i = 0; i < n; i++) {
+        cout << "\nEnter details of employee " << i + 1 << endl;
+
+        cout << "Employee ID: ";
+        cin >> e[i].id;
+
+        cout << "Employee Name: ";
+        cin >> e[i].name;
+
+        cout << "Basic Salary: ";
+        cin >> e[i].basic;
+    }
+
+    // Output loop
+    cout << "\n--- Gross Salary Details ---\n";
+
+    for (int i = 0; i < n; i++) {
+        float hra = 0.20 * e[i].basic;
+        float da  = 0.10 * e[i].basic;
+        float gross = e[i].basic + hra + da;
+
+        cout << "\nEmployee ID  : " << e[i].id;
+        cout << "\nName         : " << e[i].name;
+        cout << "\nGross Salary : " << gross << endl;
+    }
+
+    return 0;
+}
+# execute this code before learning for exam 
+
+
 
