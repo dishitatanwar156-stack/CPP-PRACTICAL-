@@ -312,7 +312,9 @@ int main() {
 
     return 0;
 }
-# execute this code before learning for exam 
+
+
+execute this code before learning for exam 
 
 
 
