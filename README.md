@@ -143,7 +143,7 @@ int main() {
 <img width="458" height="314" alt="image" src="https://github.com/user-attachments/assets/feae9989-89c3-4d3d-aa02-659ee91ca370" />
 
 
-#6.  write a C++ program to print all elements to print all elements of  a matrix in column wise order 
+# 6.  write a C++ program to print all elements to print all elements of  a matrix in column wise order 
 
 #include <iostream>
 using namespace std;
@@ -176,7 +176,7 @@ int main() {
 <img width="523" height="324" alt="image" src="https://github.com/user-attachments/assets/950def07-5735-4efc-8079-6b237b6dd530" />
 
 
-#7. create a structure student with : roll number , name  , marks  . input details by user of 5 students and display students who scored more than 75 marks . 
+# 7. create a structure student with : roll number , name  , marks  . input details by user of 5 students and display students who scored more than 75 marks . 
     return 0;
 
     #include <iostream>
@@ -265,7 +265,7 @@ int main() {
 }
 
 
-#8.Define a structure Employee containing: employee ID, name, basic salary .Calculate and display gross salary (basic + 20% HRA + 10% DA).
+# 8.Define a structure Employee containing: employee ID, name, basic salary .Calculate and display gross salary (basic + 20% HRA + 10% DA).
 
 #include <iostream>
 using namespace std;
